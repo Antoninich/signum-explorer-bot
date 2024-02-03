@@ -1,7 +1,8 @@
 version: "3.8"
 services:
   signum-explorer-bot:
-    image: bot:latest
+    build:
+      dockerfile: Dockerfile
     container_name: signum-explorer-bot
     restart: always
     environment:
